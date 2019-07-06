@@ -1,9 +1,9 @@
 # cqrs-es
 
-## on performances
+## on performances and philosophy
 
 https://blog.octo.com/devoxx-2013-la-mort-de-lupdate/
-
+https://hackernoon.com/1-year-of-event-sourcing-and-cqrs-fb9033ccd1c6
 
 # on axon
 
