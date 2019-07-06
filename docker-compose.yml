@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  redis:
+    # container_name: redis
+    # hostname: redis
+    image: redis:5.0.5
+
+  redis-commander:
+    # container_name: redis-commander
+    # hostname: redis-commander
+    image: rediscommander/redis-commander:redis-commander-210
+    environment:
+    - REDIS_HOSTS=local:redis:6379
+    ports:
+    - 8081:8081
+
+  elasticsearch:
+    image: elasticsearch:6.6.2
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      discovery.type: single-node

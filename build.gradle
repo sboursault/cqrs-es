@@ -1,0 +1,14 @@
+
+defaultTasks 'clean', 'build'
+
+allprojects {
+    group 'poc.sb.cqrses'
+}
+
+subprojects {
+
+    repositories {
+        mavenCentral()
+    }
+
+}

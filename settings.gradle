@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'cqrs-es'
+
+include ':cqrses-axon'
+include ':cqrses-custom'
